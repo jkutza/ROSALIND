@@ -1,4 +1,4 @@
-file_path = "drive/MyDrive/Colab Notebooks/rosalind practice files/rosalind_gc.txt"
+file_path = "rosalind_gc.txt"
 with open(file_path, "r") as bioinf5:
   bioinf5_contents = bioinf5.read()
 
