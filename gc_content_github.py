@@ -38,10 +38,6 @@ temp_seq += [new_entries[len(new_entries)-1]]
 last_joined_string = ''.join(temp_seq)
 all_sequences += [last_joined_string]
 
-print("All Names: " + str(all_names))
-print("All Sequences: " + str(all_sequences))
-print("------------------------------")
-
 #################### Calculating GC Content ####################################
 # First getting GC percentages into their own list
 gc_percentages = []
@@ -58,15 +54,9 @@ for seq in range(len(all_sequences)):
   gc_percent = (counter / len(all_sequences[seq])) * 100
   gc_percentages += [gc_percent]
 
-print("All GC Percentages: " + str(gc_percentages))
-
 # Find the max and index it
 max_gc_percent = max(gc_percentages)
 index_of_max = gc_percentages.index(max_gc_percent)
-
-print("Max GC Percentage is: " + str(max_gc_percent))
-print("The Index of the Max is: " + str(index_of_max))
-print("------------------------------")
 
 # Final output
 print(all_names[index_of_max][1:len(new_entries[0])])
